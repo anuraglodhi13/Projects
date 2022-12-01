@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Link my css file -->
+  <link rel="stylesheet" href="styles/styles.css" />
+
+</head>
+
+<body>
+  <header class>
+    <div class="header-div">
+      <h2>Student Enrollment Form</h3>
+    </div>
+  </header>
+  <br>
+  <br>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+
+        <form id="my-form" class="needs-validation" novalidate>
+          <div class="form-group row">
+            <label for="Name" class="col-sm-2 col-form-label"> Name </label>
+            <div class="col-sm-7">
+              <input class="form-control" id="Name" type="text" required pattern = "^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$">
+
+              <div class="invalid-feedback">
+                Please enter valid name!
+              </div>
+            </div>
+
+          </div>
+
+          <br>
+
+          <div class="form-group row">
+            <label for="Email" class="col-sm-2 col-form-label"> Email </label>
+            <div class="col-sm-7">
+              <input class="form-control" id="Email" type="email" required pattern = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$">
+
+              <div class="invalid-feedback">
+                Please enter valid email!
+              </div>
+            </div>
+
+          </div>
+
+          <br>
+
+          <div class="form-group row">
+            <label for="Website" class="col-sm-2 col-form-label"> Website </label>
+            <div class="col-sm-7">
+              <input class="form-control" id="Website" type="text"
+                pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$"
+                required>
+
+              <div class="invalid-feedback">
+                Please enter valid Website!
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="form-group row">
+            <label for="Image-Link" class="col-sm-2 col-form-label"> Image Link </label>
+            <div class="col-sm-7">
+              <input class="form-control" id="Image-Link" type="text" required
+              pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$">
+
+              <div class="invalid-feedback">
+                Please enter valid Image-Link!
+              </div>
+            </div>
+
+          </div>
+
+          <br>
+
+          <div class="form-group row">
+            <label for="Gender" class="col-sm-2 col-form-label"> Gender </label>
+            <div class="col-sm-7">
+              <div>
+                <input class="form-check-input " id="Gender" name="Gender" type="radio" value="Male" required> Male
+              </div>
+              <div>
+                <input class="form-check-input " id="Gender" name="Gender" type="radio" value="Female"> Female
+
+                <div class="invalid-feedback">
+                  Please choose one Gender!
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <br>
+          <div class="form-group row">
+            <label for="Skills" class="col-sm-2 col-form-label"> Skills </label>
+            <div class="col-sm-10">
+              <input class="form-check-input check-validation" id="language" name="language" type="checkbox" value="Java" onClick='deRequire("check-validation")' required> Java
+              <input class="form-check-input check-validation" id="language" name="language" type="checkbox" value="HTML" onClick='deRequire("check-validation")' required> HTML
+              <input class="form-check-input check-validation" id="language" name="language" type="checkbox" value="CSS" onClick='deRequire("check-validation")' required> CSS
+              <div class="invalid-feedback">
+                Please choose one language!
+              </div>
+            </div>
+
+          </div>
+
+          <br>
+
+          <input class="btn btn-primary" type="submit" name="submit" value="Enroll Student" onClick = "triggerScript()">&nbsp;&nbsp;
+          <input class="btn btn-danger" type="reset" value="Clear" onClick = "removeValidation()">
+
+        </form>
+      </div>
+
+      <div class="col-md-1">
+        <div class="vertical-line"></div>
+      </div>
+
+      <div class="col-md-5">
+        <p style="text-align: center;font-size:25px;"> Enrolled Students </p>
+        <div style="overflow:scroll;height: 325px;overflow:auto">
+          <table id="studentId" class="table table-bordered">
+            <thead>
+              <tr class = "header-row">
+                <td >Description</td>
+                <td>Image</td>
+              </tr>
+                <!-- <th scope="col" >Description</th>
+                <th scope="col">Image</th> -->
+              
+            </thead>
+            
+          </table>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+<br>
+  <footer>
+    <div class="header-div">
+      <h5>Copyright 2022-2023 by Fresher Training</h5>
+    </div>
+  </footer>
+  <!-- jQuery library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- Link my script file -->
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
