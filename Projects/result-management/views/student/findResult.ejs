@@ -1,0 +1,17 @@
+<a href="/" class="btn btn-info" style="margin-top:5px;">Back</a>
+<%if(notFound === true){%>
+    <div> <b style="color: red; margin-left: 492px;"> Oops no record found for given details. </b> </div>
+  <% } %>
+<h4>Find Result</h4>
+<form method="POST" class="addStu" autocomplete="off" action="/student/findResult">
+    <div class="mb-3">
+      <label for="rollno" class="form-label">Roll No. : </label>
+      <input type="number" name="rollno" required class="form-control" id="rollno">
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name : </label>
+        <input type="text" name="name" required class="form-control" id="name" >
+      </div>
+    <button type="submit" class="btn btn-success">Search</button>
+    <button type="reset" class="btn btn-primary">Clear</button>
+</form>

@@ -1,0 +1,6 @@
+.vscode
+/result-management-frontend/.angular
+/result-management-frontend/.vscode
+/result-management-frontend/dist
+/result-management-frontend/node_modules
+/result-management-backend/node_modules

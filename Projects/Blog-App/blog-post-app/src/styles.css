@@ -1,0 +1,234 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .content{
+    padding-top: 60px;
+  }
+  body {
+    padding-top: 4px;
+  }
+  
+  li {
+    color: grey;
+    margin: 12px;
+  }
+  
+  hr.new1 {
+    border-top: 1px dashed grey;
+  }
+  
+  .button-edits {
+    margin: 40px;
+  }
+  
+  .card-width {
+    color: white;
+    padding: 20px;
+    margin: 40px;
+  }
+  
+  .create-post {
+    margin-top: 0;
+  }
+  
+  .edit-button {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+    color: cyan;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: cyan;
+  }
+  
+  .cancel-button {
+    position: absolute;
+    top: 545px;
+    left: 90px;
+  }
+  
+  .cancel-update-button {
+    position: absolute;
+    top: 545px;
+    left: 160px;
+  }
+  
+  .button-css:active {
+    transform: translateY(3px);
+  }
+  button:focus {
+    border: none;
+    outline: none;
+}
+  .write {
+    padding-top: 50px;
+  }
+  
+  .writeForm {
+    position: relative;
+  }
+  
+  .writeFormGroup {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .writeIcon {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    color: rgb(129, 125, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .writeInput {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+  }
+  
+  .writeInput::placeholder {
+    color: rgb(189, 185, 185);
+    font-weight: 400;
+  }
+  
+  .writeInput:focus {
+    outline-style: none;
+  }
+  
+  .writeText {
+    width: 70vw;
+    height: 30vh;
+    font-family: inherit;
+    font-size: 20px;
+  }
+  
+  .writeSubmit {
+    margin-left: 170px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+  }
+  .writeCancel {
+    margin-left: 40px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;;
+    align-items: center;
+  }
+  .backButton {
+    margin-left: 40px;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;;
+    align-items: center;
+  }
+  .editButton {
+    margin-left: 40px;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;;
+    align-items: center;
+  }
+  .deleteButton {
+    margin-left: 40px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;;
+    align-items: center;
+  }
+  .centreHeading{
+    text-align: center;
+    display: inline-block;
+    margin-left: 445px;
+  }
+.viewCentreHeading{
+  text-align: center;
+    display: inline-block;
+    margin-left: 380px;
+}
+  .blog {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.blog-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.blog-subtitle {
+    font-size: 24px;
+    color: gray;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+
+.blog-post-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.blog-post-date {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.blog-post-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.like-button {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}

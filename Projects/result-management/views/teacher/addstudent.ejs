@@ -1,0 +1,31 @@
+<a href="/teacher/viewall" class="btn btn-info" style="margin-top:5px;">Back</a>
+<%if(somethingFailed === true){%>
+  <div> <b style="color: red; margin-left: 418px;"> Oops some error occured while inserting the data !!! Please try again later. </b> </div>
+<% } %>
+
+<%if(alreadyExistTrue === true){%>
+  <div> <b style="color: red; margin-left: 418px;"> Oops can't add !!! Student with rollno <%=rollno%> is already present </b> </div>
+<% } %>
+
+<h4>Add New Result</h4>
+<form method="POST" class="addStu" autocomplete="off" action="/teacher/add">
+    <div class="mb-3">
+      <label for="rollno" class="form-label">Roll No. : </label>
+      <input type="number" name="rollno" required class="form-control" id="rollno">
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name : </label>
+        <input type="text" name="name" required class="form-control" id="name" >
+      </div>
+      
+      <div class="mb-3">
+        <label for="dob" class="form-label">Date of Birth : </label>
+        <input type="date" name="dob" required class="form-control" id="dob">
+      </div>
+      <div class="mb-3">
+        <label for="score" class="form-label">Score : </label>
+        <input type="number" name="score" required class="form-control" id="score">
+      </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="reset" class="btn btn-primary">Clear</button>
+</form>

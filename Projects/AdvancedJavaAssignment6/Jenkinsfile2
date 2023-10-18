@@ -1,0 +1,14 @@
+pipeline {
+
+    agent any
+    stages {
+        stage('Build') {
+            when { changeset "*AdvancedJavaAssignment5/AdvanceJavaAssignment5-2/**"}
+            steps {
+                bat '''git fetch 
+                cd AdvancedJavaAssignment5/AdvanceJavaAssignment5-2
+                mvn clean install'''
+            }
+        }
+    }   
+}
