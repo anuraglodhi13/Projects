@@ -1,0 +1,30 @@
+// _form.scss
+// Form styles
+
+.form {
+  margin: 20px 0;
+
+  .form-field {
+    margin: 10px 0;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+}

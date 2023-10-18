@@ -1,0 +1,16 @@
+// _button.scss
+// Define button styles using Airbnb theme
+
+.custom-button {
+  background-color: $primary-color; // Use primary color for buttons
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Customize button styles based on your project's design

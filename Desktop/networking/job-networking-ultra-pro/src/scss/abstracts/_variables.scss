@@ -1,0 +1,35 @@
+// _variables.scss
+// Variable definitions
+
+// Colors
+$primary-color: #ff385c; // Primary color (red)
+$secondary-color: #484848; // Secondary color (gray)
+$accent-color: #008489; // Accent color (teal)
+
+// Typography
+$font-family: 'Arial, sans-serif'; // Default font family
+$font-size-base: 16px; // Base font size
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Spacing
+$spacing-unit: 8px; // Base spacing unit
+$spacing-unit-lg: $spacing-unit * 1.5; // Large spacing unit
+
+// Border Radius
+$border-radius: 4px;
+
+// Z-index
+$z-index-modal: 1000; // Z-index for modals
+$z-index-header: 100; // Z-index for headers
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Other variables
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// You can define more variables for your project

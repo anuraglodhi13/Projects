@@ -1,0 +1,30 @@
+// main.scss
+// Main entry point for your project's styles
+
+// Import variables, mixins, and functions
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// Import base styles
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+// Import layout styles
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/layout';
+
+// Import component styles
+@import 'components/button';
+@import 'components/card';
+@import 'components/form';
+
+// Import custom themes
+@import 'themes/theme';
+
+// Additional global styles can be added here
+
+// You can also include additional SCSS files if needed

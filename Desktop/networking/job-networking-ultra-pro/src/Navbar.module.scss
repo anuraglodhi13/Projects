@@ -1,0 +1,15 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.2); /* Adjust the alpha value to control opacity */
+  backdrop-filter: blur(10px); /* Add a blur effect to create the glassy look */
+  border-radius: 10px; /* Add some border radius for rounded corners */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .navbar-heading {
+    font-size: 24px; /* You can adjust the font size as needed */
+    font-weight: bold;
+    color: #333; /* Set the text color to ensure visibility */
+  }
+}

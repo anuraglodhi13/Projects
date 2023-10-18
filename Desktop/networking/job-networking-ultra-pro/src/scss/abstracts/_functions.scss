@@ -1,0 +1,8 @@
+// _functions.scss
+// Define custom functions for your project
+
+@function darken($color, $amount) {
+  @return mix(black, $color, $amount);
+}
+
+// You can create more custom functions as needed

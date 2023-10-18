@@ -1,0 +1,16 @@
+// _typography.scss
+// Define typography styles using Airbnb theme
+
+body {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; // Default text color
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: $primary-color; // Use primary color for headings
+}
+
+// Customize typography styles based on your project's requirements
